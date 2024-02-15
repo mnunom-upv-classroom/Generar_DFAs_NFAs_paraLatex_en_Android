@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- Button Layout -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Buttons -->
+            <Button
+                android:id="@+id/btnAddState"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add State" />
+
+            <Button
+                android:id="@+id/btnSetInitial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Set Initial" />
+
+            <Button
+                android:id="@+id/btnSetFinal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Set Final" />
+
+            <Button
+                android:id="@+id/btnAddTransition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Transition" />
+
+            <Button
+                android:id="@+id/btnExportToLatex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Export to LaTeX" />
+
+            <Button
+                android:id="@+id/btnReset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reset" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <RelativeLayout
+        android:id="@+id/containerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="16dp">
+        <!-- Los estados se agregarán aquí -->
+    </RelativeLayout>
+</LinearLayout>
